@@ -141,8 +141,12 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 38916
 >>>>>>> develop
+=======
+  controlID: 17
+>>>>>>> Stashed changes
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,8 +179,12 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 38917
 >>>>>>> develop
+=======
+  controlID: 18
+>>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,7 +216,7 @@ MonoBehaviour:
   m_BottomViewHeight: 20
 =======
     width: 992
-    height: 455.2
+    height: 333.6
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -234,6 +242,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     y: 0
     width: 889
@@ -243,10 +252,13 @@ MonoBehaviour:
   m_LastLoadedLayoutName: 
 =======
     y: 455.2
+=======
+    y: 333.6
+>>>>>>> Stashed changes
     width: 992
-    height: 267.59998
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 389.19998
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -283,8 +295,12 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 38887
 >>>>>>> develop
+=======
+  controlID: 77
+>>>>>>> Stashed changes
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -337,8 +353,8 @@ MonoBehaviour:
     y: 317.6
     width: 284.80005
     height: 405.19998
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -400,10 +416,14 @@ MonoBehaviour:
     height: 414
 =======
     x: 0
-    y: 528.8
+    y: 407.2
     width: 991
+<<<<<<< Updated upstream
     height: 246.59998
 >>>>>>> develop
+=======
+    height: 368.19998
+>>>>>>> Stashed changes
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -440,8 +460,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -459,16 +479,23 @@ MonoBehaviour:
     m_Translation: {x: 482, y: 196.5}
 =======
       width: 991
+<<<<<<< Updated upstream
       height: 225.59998
     m_Scale: {x: 0.19583331, y: 0.19583331}
     m_Translation: {x: 495.5, y: 112.79999}
 >>>>>>> develop
+=======
+      height: 347.19998
+    m_Scale: {x: 0.6998514, y: 0.69985116}
+    m_Translation: {x: 404.85532, y: 179.58241}
+>>>>>>> Stashed changes
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       x: -1766.1068
       y: -720
@@ -486,6 +513,15 @@ MonoBehaviour:
   m_defaultScale: 0.19583331
   m_LastWindowPixelSize: {x: 1238.75, y: 308.24997}
 >>>>>>> develop
+=======
+      x: -578.48755
+      y: -256.60086
+      width: 1416.0149
+      height: 496.10547
+    m_MinimalGUI: 1
+  m_defaultScale: 0.30138886
+  m_LastWindowPixelSize: {x: 1238.75, y: 460.24997}
+>>>>>>> Stashed changes
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -520,8 +556,12 @@ MonoBehaviour:
     x: 0
     y: 73.6
     width: 991
+<<<<<<< Updated upstream
     height: 434.2
 >>>>>>> develop
+=======
+    height: 312.6
+>>>>>>> Stashed changes
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -531,12 +571,17 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< Updated upstream
       snapOffset: {x: 0, y: 0}
 <<<<<<< HEAD
       snapOffsetDelta: {x: -101, y: -26}
 =======
       snapOffsetDelta: {x: -100, y: -25.600006}
 >>>>>>> develop
+=======
+      snapOffset: {x: -100, y: -25.599976}
+      snapOffsetDelta: {x: 0, y: -0.000030517578}
+>>>>>>> Stashed changes
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -557,7 +602,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -590,6 +635,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       snapOffset: {x: 67.5, y: -123}
       snapOffsetDelta: {x: 0, y: 0}
@@ -597,6 +643,10 @@ MonoBehaviour:
       snapOffset: {x: 67.5, y: -145.2}
       snapOffsetDelta: {x: 0, y: 0.000015258789}
 >>>>>>> develop
+=======
+      snapOffset: {x: 67.5, y: -123.2}
+      snapOffsetDelta: {x: 0, y: -0.80000305}
+>>>>>>> Stashed changes
       snapCorner: 2
       id: Orientation
       index: 0
@@ -616,8 +666,8 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
-      snapOffset: {x: 0, y: 0}
+      displayed: 1
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Camera
@@ -715,10 +765,10 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
-      snapOffset: {x: 0, y: 0}
+      displayed: 0
+      snapOffset: {x: -232, y: -202.40002}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 3
       id: Scene View/Particles
       index: 10
       layout: 4
@@ -732,6 +782,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_Target: {x: -0.42580944, y: -0.21895593, z: 0.08078216}
     speed: 2
@@ -741,6 +792,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 31.2747, y: 6.1892004, z: -26.976635}
 >>>>>>> develop
+=======
+    m_Target: {x: 0, y: 25, z: -92.5}
+    speed: 2
+    m_Value: {x: 0, y: 25, z: -92.5}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 31
@@ -787,6 +843,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_Target: {x: -0.00006901581, y: 0.999934, z: -0.019511621, w: 0.003981196}
     speed: 2
@@ -797,13 +854,20 @@ MonoBehaviour:
     m_Value: 3.8841257
 =======
     m_Target: {x: 0.048865553, y: 0.924677, z: -0.3556721, w: 0.12701352}
+=======
+    m_Target: {x: -0.13982566, y: -0.57342756, z: 0.10007313, w: -0.80104834}
+>>>>>>> Stashed changes
     speed: 2
-    m_Value: {x: 0.048864324, y: 0.92465377, z: -0.35566315, w: 0.12701033}
+    m_Value: {x: -0.13982122, y: -0.5734094, z: 0.100069955, w: -0.80102295}
   m_Size:
-    m_Target: 15.2891035
+    m_Target: 546.7028
     speed: 2
+<<<<<<< Updated upstream
     m_Value: 15.2891035
 >>>>>>> develop
+=======
+    m_Value: 523.1606
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1080,6 +1144,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_SelectedIDs: 2e620000
     m_LastClickedID: 25134
@@ -1089,6 +1154,11 @@ MonoBehaviour:
     m_LastClickedID: 26802
     m_ExpandedIDs: 00000000ae680000b0680000b268000000ca9a3b
 >>>>>>> develop
+=======
+    m_SelectedIDs: cc680000
+    m_LastClickedID: 26828
+    m_ExpandedIDs: 00000000c8680000ca680000cc6800005a69000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1116,11 +1186,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_ExpandedIDs: 00000000286200002a6200002c6200002e620000
 =======
     m_ExpandedIDs: 00000000ae680000b0680000b268000000ca9a3b
 >>>>>>> develop
+=======
+    m_ExpandedIDs: 00000000c8680000ca680000cc680000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1172,6 +1246,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
@@ -1180,6 +1255,9 @@ MonoBehaviour:
 --- !u!114 &15
 =======
     m_ScrollPosition: {x: 0, y: 42.500305}
+=======
+    m_ScrollPosition: {x: 0, y: 0}
+>>>>>>> Stashed changes
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 50
@@ -1221,6 +1299,7 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 98620000
@@ -1232,26 +1311,36 @@ MonoBehaviour:
       m_LastClickedID: 36088
       m_ExpandedIDs: 925ffbff2810fdffe618fdffd264fdff6265fdfffe65fdff8a66fdff2067fdffb667fdff4c68fdff94c8feff62e6ffff32ebfffff6ecffffe8faffffc8780000ea8c0000
 >>>>>>> develop
+=======
+      scrollPos: {x: 0, y: 32}
+      m_SelectedIDs: 786b0000
+      m_LastClickedID: 27512
+      m_ExpandedIDs: 0cd6ffff04daffff0af1ffffe8faffffa8690000286b00006a6b0000
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: MainCamera
+        m_OriginalName: MainCamera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 27592
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         m_ClientGUIView: {fileID: 3}
 =======
         m_ClientGUIView: {fileID: 12}
 >>>>>>> develop
+=======
+        m_ClientGUIView: {fileID: 11}
+>>>>>>> Stashed changes
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
