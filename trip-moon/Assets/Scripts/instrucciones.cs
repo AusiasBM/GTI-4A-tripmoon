@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class instrucciones : MonoBehaviour
@@ -13,7 +14,9 @@ public class instrucciones : MonoBehaviour
     public GameObject planoInstrucciones;
     public GameObject planoTrailer;
     public GameObject menu;
-    
+    public Button btnEscenaVehiculo;
+
+
     public void abrirInstrucciones()
     {
         planoInstrucciones.SetActive(true);
@@ -38,6 +41,13 @@ public class instrucciones : MonoBehaviour
         menu.SetActive(true);
     }
 
+    public void CargarEscenaVehiculo()
+    {
+        Debug.Log("Entra en cargar escena vehiculo");
+        //Cargar la escena del vehículo que se llama "Coche"
+        SceneManager.LoadScene("Coche");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +60,9 @@ public class instrucciones : MonoBehaviour
         btnTrailer.onClick.AddListener(abrirTrailer);
         Button btnCerrarTrailer = btnCerrarVideo.GetComponent<Button>();
         btnCerrarTrailer.onClick.AddListener(VolverTrailer);
+
+        Button btnVehiculo = btnEscenaVehiculo.GetComponent<Button>();
+        btnVehiculo.onClick.AddListener(CargarEscenaVehiculo);
     }
 
     // Update is called once per frame
