@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028486, g: 0.22571595, b: 0.30692378, a: 1}
+  m_IndirectSpecularColor: {r: 0.18018088, g: 0.22558805, b: 0.3067614, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -421,13 +421,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: vehiculo
+  mTrackableName: marcadorCoche
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/sprint.xml
-  mAspectRatio: 0.7753165
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 200
-  mHeight: 155.0633
+  mHeight: 200
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1841549192}
   mHiddenRoot: {fileID: 0}
-  mTargetName: vehiculo
+  mTargetName: marcadorCoche
   mDatasetName: Vuforia/sprint.xml
   mCastedBehaviour: {fileID: 1841549192}
   mMeshFilter: {fileID: 0}
