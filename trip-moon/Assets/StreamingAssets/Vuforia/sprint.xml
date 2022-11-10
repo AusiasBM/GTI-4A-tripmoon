@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="menu" size="200.000000 200.000000" />
-    <ImageTarget name="obstaculo" size="200.000000 112.500000" />
-    <ImageTarget name="vehiculo" size="200.000000 155.063293" />
+    <ImageTarget name="marcaPelota" size="200.000000 200.000000" />
+    <ImageTarget name="marcadorMenu" size="200.000000 200.000000" />
+    <ImageTarget name="marcadorCoche" size="200.000000 200.000000" />
   </Tracking>
 </QCARConfig>
