@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "aqknv85p95bqmbij",
         "name": "com.TricoGames.TripMoon",
-        "processId": 17501,
+        "processId": 27984,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,42 @@
             "deviceId": "aqknv85p95bqmbij",
             "name": "com.TricoGames.TripMoon",
             "processId": 17501,
+            "exited": false
+        },
+        {
+            "deviceId": "aqknv85p95bqmbij",
+            "name": "com.TricoGames.TripMoon",
+            "processId": 17380,
+            "exited": false
+        },
+        {
+            "deviceId": "aqknv85p95bqmbij",
+            "name": "com.TricoGames.TripMoon",
+            "processId": 21067,
+            "exited": false
+        },
+        {
+            "deviceId": "aqknv85p95bqmbij",
+            "name": "com.TricoGames.TripMoon",
+            "processId": 22616,
+            "exited": false
+        },
+        {
+            "deviceId": "aqknv85p95bqmbij",
+            "name": "com.TricoGames.TripMoon",
+            "processId": 24534,
+            "exited": false
+        },
+        {
+            "deviceId": "aqknv85p95bqmbij",
+            "name": "com.TricoGames.TripMoon",
+            "processId": 26451,
+            "exited": false
+        },
+        {
+            "deviceId": "aqknv85p95bqmbij",
+            "name": "com.TricoGames.TripMoon",
+            "processId": 27984,
             "exited": false
         }
     ],
