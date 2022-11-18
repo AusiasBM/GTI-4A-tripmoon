@@ -28726,7 +28726,7 @@ IL_0040:
 		{// begin try (depth: 1)
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_6 = V_1;
 			NullCheck(L_6);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(12 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_6, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_6, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_7 = V_1;
 			DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_8 = V_0;
 			int32_t L_9 = ___format1;
@@ -28737,7 +28737,7 @@ IL_0040:
 			DateTimeUtils_WriteDateTimeString_m41A5AB7406D377FD375E549BFA8F827095D1FF51(L_7, L_8, L_9, (String_t*)NULL, L_10, NULL);
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_11 = V_1;
 			NullCheck(L_11);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(12 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_11, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_11, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_12 = V_1;
 			NullCheck(L_12);
 			String_t* L_13;
@@ -28821,7 +28821,7 @@ IL_0038:
 		{// begin try (depth: 1)
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_3 = V_0;
 			NullCheck(L_3);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(12 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_3, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_3, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_4 = V_0;
 			DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_5 = ___value0;
 			int32_t L_6 = ___format1;
@@ -28832,7 +28832,7 @@ IL_0038:
 			DateTimeUtils_WriteDateTimeOffsetString_m9EDABF588BC284F0B388D4E1101773BAD81E7A52(L_4, L_5, L_6, (String_t*)NULL, L_7, NULL);
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_8 = V_0;
 			NullCheck(L_8);
-			VirtualActionInvoker1< Il2CppChar >::Invoke(12 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_8, ((int32_t)34));
+			VirtualActionInvoker1< Il2CppChar >::Invoke(11 /* System.Void System.IO.TextWriter::Write(System.Char) */, L_8, ((int32_t)34));
 			StringWriter_tF48052BE4F980E5C85403221E835768E4156267D* L_9 = V_0;
 			NullCheck(L_9);
 			String_t* L_10;

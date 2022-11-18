@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class controlJ : MonoBehaviour
 {
     public float speedForward = 8.0f;
     public float speedTurn = 30.0f;
     public float deadZone = 0.5f;
+    public Vector3 homePosition = new Vector3(0, 0, 0);
     public Button btnReset;
 
 
@@ -20,12 +22,18 @@ public class controlJ : MonoBehaviour
     }
 
     void resetCar(){
-        transform.position = new Vector3(0, 0, 0);
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+        transform.position = homePosition;
+        transform.rotation = Quaternion.identity;
     }
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu_principal");
+        }
+
         var gamepad = Gamepad.current;
         if (gamepad == null)
             return;

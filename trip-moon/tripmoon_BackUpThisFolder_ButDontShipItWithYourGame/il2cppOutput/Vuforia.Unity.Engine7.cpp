@@ -6441,7 +6441,7 @@ IL_006e:
 		RuntimeObject* L_17 = V_2;
 		NullCheck(L_16);
 		bool L_18;
-		L_18 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_16, L_17);
+		L_18 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_16, L_17);
 		if (!L_18)
 		{
 			goto IL_00a4;
@@ -6492,7 +6492,7 @@ IL_00c6:
 		RuntimeObject* L_26 = L_25->____annotations_4;
 		NullCheck(L_24);
 		bool L_27;
-		L_27 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(115 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_24, L_26);
+		L_27 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(113 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_24, L_26);
 		if (L_27)
 		{
 			goto IL_00db;
