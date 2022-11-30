@@ -58,5 +58,10 @@ public class CameraPointer : MonoBehaviour
         {
             _gazedAtObject?.SendMessage("OnPointerClick");
         }
+
+        if(Input.GetButton("A"))
+        {
+            print("A");
+        }
     }
 }
