@@ -32,10 +32,13 @@ public class CameraPointer : MonoBehaviour
     /// </summary>
     public void Update()
     {
+        
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
         // at.
+        int layerMask;
+        layerMask = 1 << LayerMask.NameToLayer("tocables");
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance, layerMask))
         {
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
@@ -59,9 +62,6 @@ public class CameraPointer : MonoBehaviour
             _gazedAtObject?.SendMessage("OnPointerClick");
         }
 
-        if(Input.GetButton("A"))
-        {
-            print("A");
-        }
+       
     }
 }
