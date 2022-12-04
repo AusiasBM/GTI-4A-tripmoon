@@ -37,8 +37,8 @@ public class ObjectController : MonoBehaviour
     // The objects are about 1 meter in radius, so the min/max target distance are
     // set so that the objects are always within the room (which is about 5 meters
     // across).
-    private const float _minObjectDistance = 2.5f;
-    private const float _maxObjectDistance = 3.5f;
+    private const float _minObjectDistance = 0.5f;
+    private const float _maxObjectDistance = 0.5f;
     private const float _minObjectHeight = 0.5f;
     private const float _maxObjectHeight = 3.5f;
 
@@ -69,8 +69,7 @@ public class ObjectController : MonoBehaviour
         // Computes new object's location.
         float angle = Random.Range(-Mathf.PI, Mathf.PI);
         float distance = Random.Range(_minObjectDistance, _maxObjectDistance);
-        float height = Random.Range(_minObjectHeight, _maxObjectHeight);
-        Vector3 newPos = new Vector3(Mathf.Cos(angle) * distance, height,
+        Vector3 newPos = new Vector3(Mathf.Cos(angle) * distance, 0f,
                                      Mathf.Sin(angle) * distance);
 
         // Moves the parent to the new position (siblings relative distance from their parent is 0).

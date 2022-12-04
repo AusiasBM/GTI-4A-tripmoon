@@ -26,20 +26,26 @@ public class CameraPointer : MonoBehaviour
 {
     private const float _maxDistance = 10;
     private GameObject _gazedAtObject = null;
+    public GameObject mira;
 
     /// <summary>
     /// Update is called once per frame.
     /// </summary>
-    public void Update()
+    void Update()
     {
-        
+        int layerMask = 1 << 6;
+        //layerMask = ~layerMask;
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
         // at.
-        int layerMask;
-        layerMask = 1 << LayerMask.NameToLayer("tocables");
+
+        mira.transform.position = transform.position + transform.forward * _maxDistance;
+
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            //Debug.Log("Did Hit");
+
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {
@@ -47,21 +53,28 @@ public class CameraPointer : MonoBehaviour
                 _gazedAtObject?.SendMessage("OnPointerExit");
                 _gazedAtObject = hit.transform.gameObject;
                 _gazedAtObject.SendMessage("OnPointerEnter");
+                mira.transform.GetChild(0).GetComponent<Animator>().SetTrigger("grande");
             }
         }
         else
         {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            //Debug.Log("Did not Hit");
             // No GameObject detected in front of the camera.
+            if(_gazedAtObject != null)
+            {
+                mira.transform.GetChild(0).GetComponent<Animator>().SetTrigger("peque");
+            }
             _gazedAtObject?.SendMessage("OnPointerExit");
             _gazedAtObject = null;
         }
 
         // Checks for screen touches.
-        if (Google.XR.Cardboard.Api.IsTriggerPressed)
+        if (Input.GetButton("A"))
         {
             _gazedAtObject?.SendMessage("OnPointerClick");
         }
-
+    
        
     }
 }
