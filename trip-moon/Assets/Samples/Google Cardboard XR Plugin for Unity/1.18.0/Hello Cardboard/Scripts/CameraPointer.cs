@@ -38,8 +38,10 @@ public class CameraPointer : MonoBehaviour
         int layerMask;
         layerMask = 1 << LayerMask.NameToLayer("tocables");
         RaycastHit hit;
+
         if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance, layerMask))
         {
+            _gazedAtObject = hit.transform.gameObject;
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {
@@ -56,10 +58,18 @@ public class CameraPointer : MonoBehaviour
             _gazedAtObject = null;
         }
 
+
         // Checks for screen touches.
         if (Google.XR.Cardboard.Api.IsTriggerPressed)
         {
+            Vector3 position = new Vector3(hit.point.x , 1.6f, hit.point.z);
             _gazedAtObject?.SendMessage("OnPointerClick");
+        }
+
+        if (Input.GetKeyDown("space"))
+        {
+            Vector3 position = new Vector3(hit.point.x , 1.6f, hit.point.z);
+            _gazedAtObject?.SendMessage("OnPointerClick", position);
         }
 
        
