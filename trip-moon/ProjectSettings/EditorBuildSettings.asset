@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.18.0/Hello Cardboard/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escenas RV/Trailer.unity
     guid: 97fe3d57dbd0d44cfbab59f775b2c70b
   m_configObjects:
