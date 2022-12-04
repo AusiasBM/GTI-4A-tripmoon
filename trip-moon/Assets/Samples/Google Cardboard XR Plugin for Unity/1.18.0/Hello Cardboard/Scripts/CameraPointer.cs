@@ -41,11 +41,10 @@ public class CameraPointer : MonoBehaviour
         mira.transform.position = transform.position + transform.forward * _maxDistance;
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance, layerMask))
         {
+            _gazedAtObject = hit.transform.gameObject;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            //Debug.Log("Did Hit");
-
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {
@@ -69,12 +68,18 @@ public class CameraPointer : MonoBehaviour
             _gazedAtObject = null;
         }
 
+
         // Checks for screen touches.
         if (Input.GetButton("A"))
         {
+            Vector3 position = new Vector3(hit.point.x , 1.6f, hit.point.z);
             _gazedAtObject?.SendMessage("OnPointerClick");
         }
-    
+        if (Input.GetKeyDown("space"))
+        {
+            Vector3 position = new Vector3(hit.point.x , 1.6f, hit.point.z);
+            _gazedAtObject?.SendMessage("OnPointerClick", position);
+        }
        
     }
 }
