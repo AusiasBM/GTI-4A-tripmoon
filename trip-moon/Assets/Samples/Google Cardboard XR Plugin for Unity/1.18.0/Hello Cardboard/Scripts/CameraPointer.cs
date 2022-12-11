@@ -31,7 +31,7 @@ public class CameraPointer : MonoBehaviour
     /// <summary>
     /// Update is called once per frame.
     /// </summary>
-    public void Update()
+    void Update()
     {
         
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
@@ -52,27 +52,30 @@ public class CameraPointer : MonoBehaviour
                 _gazedAtObject?.SendMessage("OnPointerExit");
                 _gazedAtObject = hit.transform.gameObject;
                 _gazedAtObject.SendMessage("OnPointerEnter");
+                mira.transform.GetChild(0).GetComponent<Animator>().SetTrigger("grande");
             }
         }
         else
         {
+            if(_gazedAtObject != null)
+            {
+                mira.transform.GetChild(0).GetComponent<Animator>().SetTrigger("peque");
+            }
             // No GameObject detected in front of the camera.
             _gazedAtObject?.SendMessage("OnPointerExit");
             _gazedAtObject = null;
         }
 
 
-        // Checks for screen touches.
-        if (Google.XR.Cardboard.Api.IsTriggerPressed)
-        {
-            Vector3 position = new Vector3(hit.point.x , 1.6f, hit.point.z);
-            _gazedAtObject?.SendMessage("OnPointerClick");
-        }
-
-        if (Input.GetKeyDown("space"))
+        if (Input.GetButton("A"))
         {
             Vector3 position = new Vector3(hit.point.x , 1.6f, hit.point.z);
             _gazedAtObject?.SendMessage("OnPointerClick", position);
+        }
+
+        if(Input.GetButton("B"))
+        {
+            _gazedAtObject?.SendMessage("OnPointerClick1");
         }
 
        

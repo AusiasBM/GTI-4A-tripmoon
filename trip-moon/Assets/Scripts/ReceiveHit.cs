@@ -7,15 +7,15 @@ public class ReceiveHit : MonoBehaviour
 {
     public UnityEvent myEvent;
     
-    public void OnPointerEnter()
+    public void OnPointerEnter1()
     {
     }
 
-    public void OnPointerExit()
+    public void OnPointerExit1()
     {
     }
 
-    public void OnPointerClick()
+    public void OnPointerClick1()
     {
         myEvent.Invoke();
     }
