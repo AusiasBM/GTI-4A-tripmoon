@@ -26,6 +26,7 @@ public class CameraPointer : MonoBehaviour
 {
     private const float _maxDistance = 10;
     private GameObject _gazedAtObject = null;
+    public GameObject mira;
 
     /// <summary>
     /// Update is called once per frame.
@@ -35,13 +36,15 @@ public class CameraPointer : MonoBehaviour
         
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
         // at.
-        int layerMask;
-        layerMask = 1 << LayerMask.NameToLayer("tocables");
+        int layerMask = 1 << 6;
+
+        mira.transform.position = transform.position + transform.forward * _maxDistance;
+
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
-            _gazedAtObject = hit.transform.gameObject;
+            //_gazedAtObject = hit.transform.gameObject;
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {
